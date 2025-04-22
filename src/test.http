@@ -1,0 +1,9 @@
+POST http://localhost:8080/v1/athu/register
+Content-Type: application/json
+
+{
+    "username" : "luong1",
+    "email" : "test11@gmail.com",
+    "password" : "123456"
+    
+}
