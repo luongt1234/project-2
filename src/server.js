@@ -4,6 +4,7 @@ const dotenv = require('dotenv');
 const mongoose = require('mongoose');
 const cookieParser = require('cookie-parser');
 const authRoute = require('./routes/Auth');
+const userRouter = require('./routes/user');
 
 dotenv.config();
 
@@ -23,6 +24,7 @@ app.use(express.json());
 
 //routes
 app.use("/v1/auth", authRoute);
+app.use("/v1/user", userRouter);
 
 const port = process.env.PORT || 3000;
 const hostName = process.env.HOSTNAME || 'localhost';

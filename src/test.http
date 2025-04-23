@@ -7,3 +7,16 @@ Content-Type: application/json
     "password" : "123456"
     
 }
+
+###
+POST http://localhost:8080/v1/athu/login
+Content-Type:  application/json
+
+{
+	"username" : "tes12345",
+    "password" : "123456"
+}
+
+###
+GET http://localhost:8080/v1/user/getAllUser
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MDhiMDQ1NTY1YmQzYzJmNmQwOWE0ZiIsImFkbWluIjpmYWxzZSwiaWF0IjoxNzQ1NDAxMTIwLCJleHAiOjE3NDU0MDgzMjB9.tEphqKH8H4AKVHkpk8PM92UceWyBgyGOwxqwkxv9Ies
